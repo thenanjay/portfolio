@@ -1,20 +1,25 @@
-import React, { useRef } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const form = useRef();
-
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [subject, setSubject] = React.useState("");
+  const [message, setMessage] = React.useState("");
   const sendEmail = (e) => {
     e.preventDefault();
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      subject: subject,
+      message: message,
+    };
     emailjs
-      .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
-        form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
-      )
+      .send("service_h3xje6d", "template_6c4e1aq", templateParams, {
+        publicKey: "HDWU4Ta52DEkcqfWL",
+      })
       .then(
         (result) => {
           toast.success("Message Sent Successfully!", {
@@ -29,6 +34,7 @@ const Contact = () => {
           document.getElementById("myForm").reset();
         },
         (error) => {
+          console.log(error);
           toast.error("Ops Message Not Sent!", {
             position: "top-right",
             autoClose: 2000,
@@ -44,11 +50,18 @@ const Contact = () => {
 
   return (
     <>
-      <form id="myForm" className="contactform" ref={form} onSubmit={sendEmail}>
+      <form id="myForm" className="contactform" onSubmit={sendEmail}>
         <div className="row">
           <div className="col-12 col-md-6">
             <div className="form-group">
-              <input type="text" name="name" placeholder="YOUR NAME" required />
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="YOUR NAME"
+                required
+              />
             </div>
           </div>
           {/* End .col */}
@@ -58,6 +71,8 @@ const Contact = () => {
               <input
                 type="email"
                 name="user_email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="YOUR EMAIL"
                 required
               />
@@ -70,6 +85,8 @@ const Contact = () => {
               <input
                 type="text"
                 name="subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
                 placeholder="YOUR SUBJECT"
                 required
               />
@@ -81,6 +98,8 @@ const Contact = () => {
             <div className="form-group">
               <textarea
                 name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 placeholder="YOUR MESSAGE"
                 required
               ></textarea>

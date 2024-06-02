@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import heroImg from "../../assets/img/hero/dark.jpg";
-import heroImgMobile from "../../assets/img/hero/img-mobile.jpg";
+import heroImg from "../../assets/img/hero/profile_no_bg.png";
+import heroImgMobile from "../../assets/img/hero/profile_mobile.png";
 import cancelImg from "../../assets/img/cancel.svg";
 import Index from "../../components/about/index";
 
@@ -24,11 +24,12 @@ const Hero = () => {
     <>
       <div className="row home-details-container align-items-center">
         <div
-          className="col-lg-4 bg position-fixed d-none d-lg-block"
+          className="col-lg-4 bg position-fixed d-none d-lg-block "
           style={{
             backgroundImage: `url(${
               process.env.PUBLIC_URL + heroContent.heroImage
             })`,
+            boxShadow: "none",
           }}
         ></div>
         <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">

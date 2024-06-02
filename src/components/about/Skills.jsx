@@ -5,9 +5,9 @@ import { BiLogoGoogleCloud } from "react-icons/bi";
 
 const skillsContent = [
   { skillName: "AWS", component: <FaAws /> },
-  { skillName: "DOCKER", component: <FaDocker /> },
   { skillName: "Linux", component: <FaLinux /> },
   { skillName: "PYTHON", component: <FaPython /> },
+  { skillName: "DOCKER", component: <FaDocker /> },
   { skillName: "KUBERNETES", component: <SiKubernetes /> },
   { skillName: "JENKINS", component: <FaJenkins /> },
   { skillName: "TERRAFORM", component: <SiTerraform /> },

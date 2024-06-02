@@ -9,7 +9,7 @@ const personalInfoContent = [
   { meta: "Address", metaInfo: "Canada" },
   { meta: "phone", metaInfo: "+1(647)861-5495" },
   { meta: "Email", metaInfo: "me@thenanjay.com" },
-  { meta: "langages", metaInfo: "English, Hindi" },
+  { meta: "languages", metaInfo: "English, Hindi" },
 ];
 
 const PersonalInfo = () => {

@@ -1,4 +1,5 @@
 import React from "react";
+import { SiCodechef } from "react-icons/si";
 
 const SocialShare = [
   {
@@ -9,6 +10,11 @@ const SocialShare = [
     iconName: "fa fa-linkedin",
     link: "https://www.linkedin.com/in/dhanu0510/",
   },
+  {
+    iconName: "fa fa-codechef",
+    component: <SiCodechef />,
+    link: "https://codechef.com/users/dhanu0510",
+  },
 ];
 
 const Social = () => {
@@ -17,7 +23,7 @@ const Social = () => {
       {SocialShare.map((val, i) => (
         <li key={i}>
           <a href={val.link} target="_blank" rel="noreferrer">
-            <i className={val.iconName}></i>
+            {val.component ? val.component : <i className={val.iconName}></i>}
           </a>
         </li>
       ))}

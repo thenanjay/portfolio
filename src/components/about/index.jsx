@@ -38,7 +38,15 @@ const index = () => {
               {/* End personal info */}
 
               <div className="col-12 mt-1">
-                <a className="button" href={cv} download>
+                <a
+                  className="button"
+                  href={
+                    "https://github.com/dhanu0510/dhanu0510/raw/main/Dhananjay's%20Resume.pdf"
+                  }
+                  download
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span className="button-text">Download CV</span>
                   <span className="button-icon fa fa-download"></span>
                 </a>
