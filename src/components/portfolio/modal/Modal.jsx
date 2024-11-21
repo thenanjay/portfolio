@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../../assets/img/portfolio/project-1.jpg";
-import img2 from "../../../assets/img/portfolio/project-2.jpg";
+//import img1 from "../../../assets/img/portfolio/project-1.jpg";
+//import img2 from "../../../assets/img/portfolio/project-2.jpg";
 import portfolioVideo from "../../../assets/img/portfolio/video.mp4";
 import CloseImg from "../../../assets/img/cancel.svg";
 import PortfolioData from "../portfolioData";
@@ -239,10 +239,10 @@ const Modal = ({ modalId, setGetModal }) => {
                       <img src={item.image} alt="portfolio project demo" />
                     </div>
                     <div>
-                      <img src={img1} alt="portfolio project demo" />
+                      <img src={item.img1} alt="portfolio project demo" />
                     </div>
                     <div>
-                      <img src={img2} alt="portfolio project demo" />
+                      <img src={item.img2} alt="portfolio project demo" />
                     </div>
                   </Slider>
                 </figure>

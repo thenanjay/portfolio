@@ -3,11 +3,8 @@ import React from "react";
 const personalInfoContent = [
   { meta: "first name", metaInfo: "Dhananjay" },
   { meta: "last name", metaInfo: "Patel" },
-  { meta: "Age", metaInfo: "23 Years" },
-  { meta: "Nationality", metaInfo: "Indian" },
   { meta: "Freelance", metaInfo: "Available" },
-  { meta: "Address", metaInfo: "Canada" },
-  { meta: "phone", metaInfo: "+1(647)861-5495" },
+  { meta: "phone", metaInfo: "+91-8154995870" },
   { meta: "Email", metaInfo: "me@thenanjay.com" },
   { meta: "languages", metaInfo: "English, Hindi" },
 ];

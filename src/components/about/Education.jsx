@@ -5,7 +5,7 @@ const educationContent = [
     year: "2024",
     degree: "Virtulization and Cloud Computing",
     institute: "Conestoga College",
-    details: `I am currently pursuing my Post Graduate Certificate in Virtulization and Cloud Computing from Conestoga College.`,
+    details: `I have completed my Post Graduate Diploma in Virtulization and Cloud Computing from Conestoga College.`,
   },
   {
     year: "2023",

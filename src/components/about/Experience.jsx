@@ -2,7 +2,7 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "Jun 2022 - Apr 2023",
+    year: "Apr 2022 - Apr 2023",
     position: "Cloud Engineer",
     compnayName: "Serving Drives",
     skills: [
@@ -18,19 +18,12 @@ const experienceContent = [
       "Worked as a Cloud Engineer at Serving Drives, responsible for managing and maintaining cloud infrastructure using AWS, Docker, Kubernetes, Terraform, and Jenkins.",
   },
   {
-    year: "Apr 2022 - Jun 2022",
-    position: "Full Stack Developer",
-    compnayName: "Serving Drives",
-    skills: ["React", "Node.js", "Express.js", "MongoDB"],
-    details: "Worked as a full stack developer using MERN stack.",
-  },
-  {
     year: "Jan 2022 - Apr 2022",
     position: "Internship",
     compnayName: "BrainyBeam Technologies Pvt. Ltd",
-    skills: ["React", "Node.js", "Express.js", "MongoDB"],
+    skills: ["AWS" ,"Git", "Python", "Linux","Bash Scripting"],
     details:
-      "Worked as an intern at BrainyBeam Technologies Pvt. Ltd gaining experience in full stack development using React and Node.js.",
+      "Worked as an intern at BrainyBeam Technologies Pvt. Ltd gaining experience in Cloud Engineer, AWS, Python, and Bash Scripting",
   },
   {
     year: "May 2021 - June 2021",

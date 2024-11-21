@@ -4,11 +4,11 @@ import { SiCodechef } from "react-icons/si";
 const SocialShare = [
   {
     iconName: "fa fa-github",
-    link: "https://www.github.com/dhanu0510",
+    link: "https://www.github.com/thenanjay",
   },
   {
     iconName: "fa fa-linkedin",
-    link: "https://www.linkedin.com/in/dhanu0510/",
+    link: "https://www.linkedin.com/in/thenanjay/",
   },
   {
     iconName: "fa fa-codechef",
