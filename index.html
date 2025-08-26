@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Thenanjay - DevOps Engineer</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Rain Animation Container -->
+    <div class="rain-container" id="rainContainer"></div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">DP</div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#writing">Blog</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <div class="hero-section" id="home">
+      <!-- Floating Shapes -->
+      <div class="floating-shape"></div>
+      <div class="floating-shape"></div>
+      <div class="floating-shape"></div>
+      <div class="content-wrapper px-6 py-24 sm:px-12 sm:py-32 lg:px-24">
+        <div class="max-w-4xl mx-auto">
+          <!-- Username Display -->
+          <div class="username-intro text-center mb-4 opacity-0 animate-fade-in-down" style="animation-delay: 0.2s;">
+            <span class="text-[var(--text-secondary)] text-sm sm:text-base font-mono">
+              $ whoami
+            </span>
+            <div class="username-display text-[var(--primary-color)] font-mono text-lg sm:text-xl mt-1">
+              thenanjay
+            </div>
+          </div>
+
+          <!-- Status and Location Badges -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6 opacity-0 animate-fade-in" style="animation-delay: 0.4s;">
+            <div class="status-indicator">
+              <div class="status-dot"></div>
+              <span>Available for opportunities</span>
+            </div>
+            <div class="location-badge">
+              <i class="fas fa-map-marker-alt location-icon"></i>
+              <span>India</span>
+              <span class="timezone-info" id="timezone">IST</span>
+            </div>
+          </div>
+          
+          <h1
+            class="text-4xl font-black text-[var(--text-primary)] sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter opacity-0 animate-fade-in-down"
+            style="animation-delay: 0.5s;"
+          >
+            <span class="hero-gradient-text">Dhananjay</span> Patel
+          </h1>
+          
+          <!-- Enhanced Typing Animation -->
+          <div class="typing-container mt-6 opacity-0 animate-fade-in-up" style="animation-delay: 1s;">
+            <p class="text-lg font-medium text-[var(--text-secondary)] sm:text-xl lg:text-2xl">
+              <span class="typing-prefix text-[var(--primary-color)] font-mono">~/$ </span>
+              <span id="typed-text" class="typed-text"></span>
+              <span class="typing-cursor">|</span>
+            </p>
+          </div>
+          <div
+            class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in"
+            style="animation-delay: 3s;"
+          >
+            <a
+              class="pulse-on-hover w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white bg-[var(--primary-color)] border border-transparent rounded-lg shadow-lg hover:bg-opacity-90 transform hover:-translate-y-1 transition-all duration-300"
+              href="#contact"
+            >
+              Contact Me
+            </a>
+            <a
+              class="pulse-on-hover w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 text-base font-bold text-[var(--primary-color)] bg-transparent border-2 border-[var(--primary-color)] rounded-lg shadow-lg hover:bg-[var(--primary-color)] hover:text-white transform hover:-translate-y-1 transition-all duration-300"
+              href="#about"
+            >
+              About Me
+            </a>
+          </div>
+          <div class="mt-12 flex justify-center space-x-6 opacity-0 animate-fade-in" style="animation-delay: 3.5s;">
+            <a
+              class="social-link text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-300"
+              href="https://github.com/thenanjay"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a
+              class="social-link text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-300"
+              href="https://linkedin.com/in/thenanjay"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section" id="about">
+      <div class="container mx-auto px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="section-title text-3xl font-bold tracking-tight text-[var(--text-primary)] sm:text-4xl mb-12"
+          >
+            About Me
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
+            <div class="md:col-span-2 about-left-content">
+              <!-- Profile Image Section -->
+              <div class="profile-section mb-8">
+                <div class="profile-image-container">
+                  <div class="profile-image">
+                    <i class="fas fa-user-cog profile-icon"></i>
+                  </div>
+                  <div class="profile-ring"></div>
+                </div>
+                
+                <!-- Stats Section -->
+                <div class="stats-grid">
+                  <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Years Experience</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number" data-target="99.99">0</div>
+                    <div class="stat-label">Uptime Achieved</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Enhanced About Text -->
+              <div class="about-text">
+                <div class="quote-section">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p class="quote-text">
+                    "Building scalable infrastructure that empowers teams to ship faster with confidence."
+                  </p>
+                </div>
+                
+                <p class="about-paragraph">
+                  I'm Dhananjay (Mr. D), a DevOps Engineer specializing in cloud-native technologies, automation, and scalable infrastructure. I bridge the gap between development and operations through modern CI/CD practices and container orchestration.
+                </p>
+                
+                <p class="about-paragraph">
+                  My expertise spans Kubernetes, Terraform, Docker, and multi-cloud architecture (AWS, GCP, Azure). I'm passionate about creating reliable systems that help teams deliver faster.
+                </p>
+
+                <!-- Core Specialties -->
+                <div class="specialties-section">
+                  <h4 class="specialties-title">🔧 Core Focus</h4>
+                  <div class="specialties-grid">
+                    <div class="specialty-item">
+                      <i class="fas fa-dharmachakra specialty-icon"></i>
+                      <span>Kubernetes & Container Orchestration</span>
+                    </div>
+                    <div class="specialty-item">
+                      <i class="fas fa-code specialty-icon"></i>
+                      <span>Infrastructure as Code (Terraform)</span>
+                    </div>
+                    <div class="specialty-item">
+                      <i class="fas fa-rocket specialty-icon"></i>
+                      <span>CI/CD Pipeline Automation</span>
+                    </div>
+                    <div class="specialty-item">
+                      <i class="fas fa-cloud specialty-icon"></i>
+                      <span>Multi-Cloud Architecture</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md:col-span-3">
+              <div class="journey-header">
+                <h3 class="journey-title">
+                  <i class="fas fa-rocket journey-icon"></i>
+                  My Journey
+                </h3>
+                <p class="journey-subtitle">From curiosity to cloud-native expertise</p>
+              </div>
+              
+              <div class="timeline enhanced-timeline">
+                <div class="timeline-item enhanced-timeline-item">
+                  <div class="timeline-icon">
+                    <i class="fas fa-lightbulb"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h4 class="timeline-title">
+                      Curiosity Ignited
+                      <span class="timeline-year">2018–2020</span>
+                    </h4>
+                    <p class="timeline-description">
+                      During engineering, discovered Linux and open source. Exploring terminals and breaking/fixing systems sparked curiosity for how technology works at its core.
+                    </p>
+                    <div class="timeline-skills">
+                      <span class="timeline-skill">Linux</span>
+                      <span class="timeline-skill">Shell Scripting</span>
+                      <span class="timeline-skill">Open Source</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="timeline-item enhanced-timeline-item">
+                  <div class="timeline-icon">
+                    <i class="fas fa-hammer"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h4 class="timeline-title">
+                      Builder's Mindset
+                      <span class="timeline-year">2021–2022</span>
+                    </h4>
+                    <p class="timeline-description">
+                      Curiosity evolved into a builder's mindset. Started creating projects, experimenting with cloud platforms and containerization, designing scalable and resilient systems.
+                    </p>
+                    <div class="timeline-skills">
+                      <span class="timeline-skill">Cloud</span>
+                      <span class="timeline-skill">Docker</span>
+                      <span class="timeline-skill">Terraform</span>
+                      <span class="timeline-skill">Kubernetes</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="timeline-item enhanced-timeline-item">
+                  <div class="timeline-icon">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h4 class="timeline-title">
+                      Cloud-Native Era
+                      <span class="timeline-year">2023–Present</span>
+                    </h4>
+                    <p class="timeline-description">
+                      Living in a cloud-native world where automation, scalability, and reliability define how I work. Transforming ideas into robust, production-ready solutions.
+                    </p>
+                    <div class="timeline-skills">
+                      <span class="timeline-skill">DevOps Mindset</span>
+                      <span class="timeline-skill">CI/CD</span>
+                      <span class="timeline-skill">IaC</span>
+                      <span class="timeline-skill">Monitoring</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-[var(--secondary-color)]" id="skills">
+      <div class="container mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          <h2
+            class="section-title text-3xl font-bold tracking-tight text-[var(--text-primary)] sm:text-4xl mb-12 text-center"
+          >
+            Technical Skills
+          </h2>
+          
+          <!-- Skills Legend -->
+          <div class="skills-legend">
+            <div class="legend-item">
+              <div class="legend-bar expert"></div>
+              <span>Expert (85%+)</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-bar proficient"></div>
+              <span>Proficient (70-84%)</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-bar intermediate"></div>
+              <span>Intermediate (50-69%)</span>
+            </div>
+          </div>
+          
+          <!-- Skills Grid -->
+          <div class="skills-grid">
+            
+            <!-- Cloud & Infrastructure -->
+            <div class="skill-category-compact">
+              <div class="skill-icon-header">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud & Infrastructure</h3>
+              </div>
+              <div class="skill-items-compact">
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">AWS (EKS)</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="95"></div>
+                  </div>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">GCP</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="75"></div>
+                  </div>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Azure</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="70"></div>
+                  </div>
+                  <span class="skill-percentage">70%</span>
+                </div>
+              </div>
+              <div class="tech-tags-compact">
+                <span class="tech-tag-compact">EC2</span>
+                <span class="tech-tag-compact">EKS</span>
+                <span class="tech-tag-compact">RDS</span>
+                <span class="tech-tag-compact">Lambda</span>
+                <span class="tech-tag-compact">S3</span>
+                <span class="tech-tag-compact">CloudWatch</span>
+              </div>
+            </div>
+
+            <!-- Infrastructure as Code -->
+            <div class="skill-category-compact">
+              <div class="skill-icon-header">
+                <i class="fas fa-code"></i>
+                <h3>Infrastructure as Code</h3>
+              </div>
+              <div class="skill-items-compact">
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Terraform</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="90"></div>
+                  </div>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">CloudFormation</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="75"></div>
+                  </div>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Pulumi</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="65"></div>
+                  </div>
+                  <span class="skill-percentage">65%</span>
+                </div>
+              </div>
+              <div class="tech-tags-compact">
+                <span class="tech-tag-compact">Modules</span>
+                <span class="tech-tag-compact">State Management</span>
+                <span class="tech-tag-compact">Multi-Cloud</span>
+                <span class="tech-tag-compact">Automation</span>
+                <span class="tech-tag-compact">Providers</span>
+              </div>
+            </div>
+
+            <!-- Containers & Orchestration -->
+            <div class="skill-category-compact">
+              <div class="skill-icon-header">
+                <i class="fab fa-docker"></i>
+                <h3>Containers & Orchestration</h3>
+              </div>
+              <div class="skill-items-compact">
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Docker</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="92"></div>
+                  </div>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Kubernetes</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="85"></div>
+                  </div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">EKS</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="88"></div>
+                  </div>
+                  <span class="skill-percentage">88%</span>
+                </div>
+              </div>
+              <div class="tech-tags-compact">
+                <span class="tech-tag-compact">Deployments</span>
+                <span class="tech-tag-compact">Services</span>
+                <span class="tech-tag-compact">Ingress</span>
+                <span class="tech-tag-compact">Scaling</span>
+              </div>
+            </div>
+
+            <!-- CI/CD & GitOps -->
+            <div class="skill-category-compact">
+              <div class="skill-icon-header">
+                <i class="fas fa-code-branch"></i>
+                <h3>CI/CD & GitOps</h3>
+              </div>
+              <div class="skill-items-compact">
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">ArgoCD</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="88"></div>
+                  </div>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">FluxCD</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="82"></div>
+                  </div>
+                  <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">GitHub Actions</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="85"></div>
+                  </div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+              </div>
+              <div class="tech-tags-compact">
+                <span class="tech-tag-compact">Jenkins</span>
+                <span class="tech-tag-compact">GitLab CI</span>
+                <span class="tech-tag-compact">Pipelines</span>
+                <span class="tech-tag-compact">AppSets</span>
+              </div>
+            </div>
+
+            <!-- Monitoring, Logging & Observability -->
+            <div class="skill-category-compact">
+              <div class="skill-icon-header">
+                <i class="fas fa-chart-line"></i>
+                <h3>Monitoring & Observability</h3>
+              </div>
+              <div class="skill-items-compact">
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Prometheus</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="80"></div>
+                  </div>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Grafana</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="85"></div>
+                  </div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">ELK Stack</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="75"></div>
+                  </div>
+                  <span class="skill-percentage">75%</span>
+                </div>
+              </div>
+              <div class="tech-tags-compact">
+                <span class="tech-tag-compact">Loki</span>
+                <span class="tech-tag-compact">Fluentd</span>
+                <span class="tech-tag-compact">Kibana</span>
+                <span class="tech-tag-compact">Jaeger</span>
+                <span class="tech-tag-compact">New Relic</span>
+                <span class="tech-tag-compact">Alerting</span>
+              </div>
+            </div>
+
+            <!-- Linux & System Tools -->
+            <div class="skill-category-compact">
+              <div class="skill-icon-header">
+                <i class="fab fa-linux"></i>
+                <h3>Linux & System Tools</h3>
+              </div>
+              <div class="skill-items-compact">
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Linux CLI</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="95"></div>
+                  </div>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Shell Scripting</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="90"></div>
+                  </div>
+                  <span class="skill-percentage">90%</span>
+                </div>
+              </div>
+              <div class="tech-tags-compact">
+                <span class="tech-tag-compact">Bash</span>
+                <span class="tech-tag-compact">Ubuntu</span>
+                <span class="tech-tag-compact">CentOS</span>
+                <span class="tech-tag-compact">SSH</span>
+                <span class="tech-tag-compact">System Admin</span>
+                <span class="tech-tag-compact">Troubleshooting</span>
+              </div>
+            </div>
+
+            <!-- Version Control & Collaboration -->
+            <div class="skill-category-compact">
+              <div class="skill-icon-header">
+                <i class="fab fa-git-alt"></i>
+                <h3>Version Control & Collaboration</h3>
+              </div>
+              <div class="skill-items-compact">
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Git</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="92"></div>
+                  </div>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">GitHub</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="88"></div>
+                  </div>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">GitLab</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="82"></div>
+                  </div>
+                  <span class="skill-percentage">82%</span>
+                </div>
+              </div>
+              <div class="tech-tags-compact">
+                <span class="tech-tag-compact">Branching</span>
+                <span class="tech-tag-compact">Merging</span>
+                <span class="tech-tag-compact">Code Review</span>
+                <span class="tech-tag-compact">Workflows</span>
+              </div>
+            </div>
+
+            <!-- Automation & Configuration Management -->
+            <div class="skill-category-compact">
+              <div class="skill-icon-header">
+                <i class="fas fa-cogs"></i>
+                <h3>Automation & Config Management</h3>
+              </div>
+              <div class="skill-items-compact">
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Ansible</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="78"></div>
+                  </div>
+                  <span class="skill-percentage">78%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Helm</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="85"></div>
+                  </div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-item-compact">
+                  <span class="skill-name-compact">Chef</span>
+                  <div class="skill-bar-compact">
+                    <div class="skill-fill-compact" data-width="70"></div>
+                  </div>
+                  <span class="skill-percentage">70%</span>
+                </div>
+              </div>
+              <div class="tech-tags-compact">
+                <span class="tech-tag-compact">Playbooks</span>
+                <span class="tech-tag-compact">Charts</span>
+                <span class="tech-tag-compact">Templates</span>
+                <span class="tech-tag-compact">Kustomize</span>
+                <span class="tech-tag-compact">Package Management</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="projects">
+      <div class="container mx-auto px-6 lg:px-8">
+        <h2
+          class="section-title text-3xl font-bold tracking-tight text-[var(--text-primary)] sm:text-4xl mb-12 text-center"
+        >
+          Projects / Case Studies
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div
+            class="project-card bg-[var(--secondary-color)] rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-2xl font-bold text-[var(--primary-color)]">
+                  WhizStream (Streaming Platform)
+                </h3>
+                <span class="status-badge live">Live</span>
+              </div>
+              <p class="text-[var(--text-secondary)] mb-4">
+                <strong class="text-[var(--text-primary)]">Solution:</strong>
+                Developed a scalable video streaming platform with user authentication, video upload via S3 pre-signed URLs, and automated processing into multiple resolutions using EC2 auto-scaling.
+              </p>
+              <p class="text-[var(--text-secondary)] mb-4">
+                <strong class="text-[var(--text-primary)]">Architecture:</strong>
+                Built secure three-tier architecture with separate VPCs for web, application, and database layers, integrated with SQS messaging and automated CI/CD pipelines.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tech-badge">EC2</span>
+                <span class="tech-badge">S3</span>
+                <span class="tech-badge">Lambda</span>
+                <span class="tech-badge">SQS</span>
+                <span class="tech-badge">API Gateway</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">GitHub Actions</span>
+              </div>
+              <a
+                class="inline-flex items-center text-[var(--primary-color)] font-semibold hover:underline"
+                href="https://github.com/thenanjay/whizstream"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on GitHub
+                <span class="material-symbols-outlined ml-1"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+          <div
+            class="project-card bg-[var(--secondary-color)] rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-2xl font-bold text-[var(--primary-color)]">
+                  Automated EKS Deployment with Terraform & Jenkins
+                </h3>
+                <span class="status-badge live">Live</span>
+              </div>
+              <p class="text-[var(--text-secondary)] mb-4">
+                <strong class="text-[var(--text-primary)]">Solution:</strong>
+                Designed fully automated infrastructure setup using Terraform to provision VPCs, subnets, and EC2 instances, with Jenkins pipelines for EKS cluster management.
+              </p>
+              <p class="text-[var(--text-secondary)] mb-4">
+                <strong class="text-[var(--text-primary)]">Outcome:</strong>
+                Achieved complete infrastructure automation with seamless Kubernetes application deployment on EKS clusters using CI/CD pipelines.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tech-badge">AWS EKS</span>
+                <span class="tech-badge">Terraform</span>
+                <span class="tech-badge">Jenkins</span>
+                <span class="tech-badge">Kubernetes</span>
+                <span class="tech-badge">CI/CD</span>
+                <span class="tech-badge">eksctl</span>
+              </div>
+              <a
+                class="inline-flex items-center text-[var(--primary-color)] font-semibold hover:underline"
+                href="https://github.com/thenanjay/eks-cluster-terraform-jenkins"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on GitHub
+                <span class="material-symbols-outlined ml-1"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-[var(--secondary-color)]" id="writing">
+      <div class="container mx-auto px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+          <!-- Enhanced Header -->
+          <div class="text-center mb-16">
+            <h2 class="section-title text-3xl font-bold tracking-tight text-[var(--text-primary)] sm:text-4xl mb-4">
+              <i class="fas fa-terminal mr-3 text-[var(--primary-color)]"></i>
+              Latest Articles & Insights
+            </h2>
+            <p class="text-[var(--text-secondary)] text-lg max-w-2xl mx-auto">
+              Exploring DevOps, cloud-native technologies, and modern development practices through detailed tutorials and real-world insights.
+            </p>
+            
+            <!-- Article Stats -->
+            <div class="flex justify-center gap-8 mt-8">
+              <div class="text-center">
+                <div class="text-2xl font-bold text-[var(--primary-color)]">5</div>
+                <div class="text-sm text-[var(--text-secondary)]">Articles</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-[var(--primary-color)]">2</div>
+                <div class="text-sm text-[var(--text-secondary)]">Platforms</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-[var(--primary-color)]">3</div>
+                <div class="text-sm text-[var(--text-secondary)]">Topics</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Article -->
+          <div class="mb-12">
+            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-6 flex items-center">
+              <i class="fas fa-star mr-2 text-yellow-400"></i>
+              Featured Article
+            </h3>
+            <a class="block featured-article-card" href="https://blog.thenanjay.com/docker-image-optimization" target="_blank" rel="noopener noreferrer">
+              <div class="featured-content">
+                <div class="featured-badge">
+                  <i class="fas fa-fire mr-1"></i>
+                  Most Popular
+                </div>
+                <div class="featured-text">
+                  <h4 class="featured-title">
+                    Docker Image Optimization: Reducing Size for Faster Deployments
+                  </h4>
+                  <p class="featured-description">
+                    A comprehensive deep-dive into Docker image optimization techniques that helped reduce deployment sizes from 1.2GB to 250MB. Learn 7 proven strategies including multi-stage builds, Alpine images, and docker-slim integration for production-ready containers.
+                  </p>
+                  <div class="featured-meta">
+                    <div class="featured-tags">
+                      <span class="featured-tag">Docker</span>
+                      <span class="featured-tag">DevOps</span>
+                      <span class="featured-tag">Performance</span>
+                    </div>
+                    <div class="featured-date">
+                      <i class="fas fa-calendar mr-1"></i>
+                      Nov 17, 2024 • 8 min read
+                    </div>
+                  </div>
+                </div>
+                <div class="featured-visual">
+                  <div class="featured-icon">
+                    <i class="fab fa-docker"></i>
+                  </div>
+                  <div class="featured-stats">
+                    <div class="stat-item">
+                      <span class="stat-number">1.2GB</span>
+                      <span class="stat-arrow">→</span>
+                      <span class="stat-number">250MB</span>
+                    </div>
+                    <div class="stat-label">Size Reduction</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="article-filters mb-8">
+            <div class="filter-tabs">
+              <button class="filter-tab active" data-filter="all">
+                <i class="fas fa-th-large mr-2"></i>All Articles
+              </button>
+              <button class="filter-tab" data-filter="docker">
+                <i class="fab fa-docker mr-2"></i>Docker
+              </button>
+              <button class="filter-tab" data-filter="devops">
+                <i class="fas fa-cogs mr-2"></i>DevOps
+              </button>
+              <button class="filter-tab" data-filter="programming">
+                <i class="fas fa-code mr-2"></i>Programming
+              </button>
+            </div>
+          </div>
+
+          <!-- Article Grid -->
+          <div class="articles-grid">
+            <!-- Article 2: Docker Layer Caching -->
+            <article class="blog-card modern" data-category="docker devops">
+              <div class="card-header">
+                <div class="platform-badge hashnode">
+                  <i class="fas fa-newspaper mr-1"></i>
+                  Hashnode
+                </div>
+                <div class="reading-time">5 min</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">
+                  <a href="https://blog.thenanjay.com/docker-layer-caching-explained-tips-to-improve-build-times" target="_blank">
+                    Docker Layer Caching Explained: Tips to Improve Build Times
+                  </a>
+                </h3>
+                <p class="card-excerpt">
+                  Master Docker layer caching to dramatically reduce build times. Learn practical optimization techniques and best practices.
+                </p>
+                <div class="card-tags">
+                  <span class="tag">Docker</span>
+                  <span class="tag">Kubernetes</span>
+                  <span class="tag">DevOps</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="publish-date">
+                  <i class="fas fa-clock mr-1"></i>
+                  Nov 19, 2024
+                </div>
+                <div class="read-more">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 3: Dockerfile Anti-Patterns -->
+            <article class="blog-card modern" data-category="docker devops">
+              <div class="card-header">
+                <div class="platform-badge hashnode">
+                  <i class="fas fa-newspaper mr-1"></i>
+                  Hashnode
+                </div>
+                <div class="reading-time">6 min</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">
+                  <a href="https://blog.thenanjay.com/dockerfile-anti-patterns" target="_blank">
+                    Dockerfile Anti-Patterns: What Not to Do
+                  </a>
+                </h3>
+                <p class="card-excerpt">
+                  Avoid common Dockerfile mistakes and learn best practices for building secure, efficient container images.
+                </p>
+                <div class="card-tags">
+                  <span class="tag">Docker</span>
+                  <span class="tag">Security</span>
+                  <span class="tag">Best Practices</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="publish-date">
+                  <i class="fas fa-clock mr-1"></i>
+                  Nov 26, 2024
+                </div>
+                <div class="read-more">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 4: VS Code C++ Formatter -->
+            <article class="blog-card modern" data-category="programming">
+              <div class="card-header">
+                <div class="platform-badge builtin">
+                  <i class="fas fa-building mr-1"></i>
+                  Built In
+                </div>
+                <div class="reading-time">7 min</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">
+                  <a href="https://builtin.com/articles/vscode-c-formatter-settings" target="_blank">
+                    How to Configure C++ Code Formatting in Visual Studio Code
+                  </a>
+                </h3>
+                <p class="card-excerpt">
+                  Complete guide to setting up C++ formatting in VS Code with Google, Microsoft, LLVM, and Mozilla styles.
+                </p>
+                <div class="card-tags">
+                  <span class="tag">C++</span>
+                  <span class="tag">VS Code</span>
+                  <span class="tag">Development</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="publish-date">
+                  <i class="fas fa-clock mr-1"></i>
+                  Dec 13, 2024
+                </div>
+                <div class="read-more">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 5: Python Stacks -->
+            <article class="blog-card modern" data-category="programming">
+              <div class="card-header">
+                <div class="platform-badge builtin">
+                  <i class="fas fa-building mr-1"></i>
+                  Built In
+                </div>
+                <div class="reading-time">9 min</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">
+                  <a href="https://builtin.com/articles/stack-in-python" target="_blank">
+                    A Complete Guide to Stacks in Python
+                  </a>
+                </h3>
+                <p class="card-excerpt">
+                  Master stack data structures in Python with practical examples using lists, deque, and LifoQueue implementations.
+                </p>
+                <div class="card-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Data Structures</span>
+                  <span class="tag">Algorithms</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="publish-date">
+                  <i class="fas fa-clock mr-1"></i>
+                  Apr 09, 2025
+                </div>
+                <div class="read-more">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="blog-cta">
+            <div class="cta-content">
+              <h3 class="cta-title">
+                <i class="fas fa-rss mr-2"></i>
+                Stay Updated
+              </h3>
+              <p class="cta-description">
+                Get notified when I publish new articles about DevOps, cloud technologies, and software development.
+              </p>
+              <div class="cta-buttons">
+                <a href="https://blog.thenanjay.com" target="_blank" class="cta-button primary">
+                  <i class="fas fa-external-link-alt mr-2"></i>
+                  Visit Blog
+                </a>
+                <a href="https://blog.thenanjay.com/newsletter" target="_blank" class="cta-button secondary">
+                  <i class="fas fa-envelope mr-2"></i>
+                  Subscribe
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="experience">
+      <div class="container mx-auto px-6 lg:px-8">
+        <h2
+          class="section-title text-3xl font-bold tracking-tight text-[var(--text-primary)] sm:text-4xl mb-8 text-center"
+        >
+          Experience &amp; Education
+        </h2>
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Professional Experience Column -->
+            <div class="timeline experience-timeline">
+              <h3 class="text-xl font-semibold text-[var(--primary-color)] mb-6 text-center">
+                💼 Professional Experience
+              </h3>
+              
+              <div class="timeline-item enhanced-timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">
+                    Freelance DevOps Engineer
+                    <span class="timeline-year">May 2023 – Current</span>
+                  </h4>
+                  <p class="text-sm font-medium text-[var(--primary-color)] mb-2">
+                    Freelancing, Remote
+                  </p>
+                  <ul class="text-xs text-[var(--text-secondary)] space-y-1">
+                    <li>• Designed and optimized AWS cloud infrastructure, improving performance and cost efficiency</li>
+                    <li>• Built CI/CD pipelines using Jenkins, GitHub Actions, and Terraform for automated deployments</li>
+                    <li>• Deployed and managed Docker containers and Kubernetes (EKS) for scalable applications</li>
+                    <li>• Implemented monitoring and logging with Prometheus, Grafana, and AWS CloudWatch</li>
+                    <li>• Worked closely with clients to deliver tailored DevOps solutions</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="timeline-item enhanced-timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">
+                    DevOps Engineer
+                    <span class="timeline-year">Apr 2022 – Apr 2023</span>
+                  </h4>
+                  <p class="text-sm font-medium text-[var(--primary-color)] mb-2">
+                    Serving Drives, Rajasthan, India
+                  </p>
+                  <ul class="text-xs text-[var(--text-secondary)] space-y-1">
+                    <li>• Managed AWS services including S3, Lambda, API Gateway, and ALB to optimize performance</li>
+                    <li>• Deployed and managed Docker containers and Kubernetes clusters (EKS) for microservices</li>
+                    <li>• Automated CI/CD pipelines using Jenkins and infrastructure provisioning with Terraform</li>
+                    <li>• Developed automation scripts using Linux Bash and Python for operational efficiency</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="timeline-item enhanced-timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">
+                    Cloud Internship
+                    <span class="timeline-year">Jan 2022 – Apr 2022</span>
+                  </h4>
+                  <p class="text-sm font-medium text-[var(--primary-color)] mb-2">
+                    BrainyBeam Technologies, Gujarat, India
+                  </p>
+                  <ul class="text-xs text-[var(--text-secondary)] space-y-1">
+                    <li>• Assisted in managing cloud infrastructure on AWS with EC2, S3, and RDS</li>
+                    <li>• Supported automation of cloud tasks using Python and Bash scripting</li>
+                    <li>• Collaborated in monitoring cloud environments and troubleshooting system errors</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Education Column -->
+            <div class="timeline education-timeline">
+              <h3 class="text-xl font-semibold text-[var(--primary-color)] mb-6 text-center">
+                🎓 Academic Background
+              </h3>
+              
+              <div class="timeline-item enhanced-timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">
+                    Post Graduate
+                    <span class="timeline-year">Jan 2024 – Aug 2024</span>
+                  </h4>
+                  <p class="text-sm font-medium text-[var(--primary-color)] mb-1">
+                    Virtualization and Cloud Computing
+                  </p>
+                  <p class="text-xs text-[var(--text-secondary)]">
+                    Conestoga College, Waterloo, ON
+                  </p>
+                </div>
+              </div>
+              
+              <div class="timeline-item enhanced-timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">
+                    Post Graduate
+                    <span class="timeline-year">Jan 2023 – Aug 2023</span>
+                  </h4>
+                  <p class="text-sm font-medium text-[var(--primary-color)] mb-1">
+                    Information and Technology
+                  </p>
+                  <p class="text-xs text-[var(--text-secondary)]">
+                    Algoma University, Brampton, ON
+                  </p>
+                </div>
+              </div>
+              
+              <div class="timeline-item enhanced-timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">
+                    Bachelor of Engineering
+                    <span class="timeline-year">Aug 2018 – May 2022</span>
+                  </h4>
+                  <p class="text-sm font-medium text-[var(--primary-color)] mb-1">
+                    Computer Engineering
+                  </p>
+                  <p class="text-xs text-[var(--text-secondary)]">
+                    Gujarat Technological University, Gujarat, India
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-[var(--secondary-color)]" id="contact">
+      <div class="container mx-auto px-6 lg:px-8">
+        <h2
+          class="section-title text-3xl font-bold tracking-tight text-[var(--text-primary)] sm:text-4xl mb-12 text-center"
+        >
+          Get In Touch
+        </h2>
+        <div class="max-w-xl mx-auto">
+          <form action="#" class="contact-form space-y-6" method="POST">
+            <div>
+              <label class="sr-only" for="name">Name</label>
+              <input
+                autocomplete="name"
+                class="block w-full bg-[var(--accent-color)] border-[var(--primary-color)] rounded-md py-3 px-4 text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)]"
+                id="name"
+                name="name"
+                placeholder="~/.name"
+                type="text"
+              />
+            </div>
+            <div>
+              <label class="sr-only" for="email">Email</label>
+              <input
+                autocomplete="email"
+                class="block w-full bg-[var(--accent-color)] border-[var(--primary-color)] rounded-md py-3 px-4 text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)]"
+                id="email"
+                name="email"
+                placeholder="~/.email"
+                type="email"
+              />
+            </div>
+            <div>
+              <label class="sr-only" for="message">Message</label>
+              <textarea
+                class="block w-full bg-[var(--accent-color)] border-[var(--primary-color)] rounded-md py-3 px-4 text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)]"
+                id="message"
+                name="message"
+                placeholder="echo 'Your message here'"
+                rows="4"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                class="pulse-on-hover w-full inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-[var(--primary-color)] border border-transparent rounded-lg shadow-lg hover:bg-opacity-90 transform hover:-translate-y-1 transition-all duration-300"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+          <div class="mt-12 flex justify-center space-x-6">
+            <a
+              class="social-link text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-300"
+              href="https://github.com/thenanjay"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a
+              class="social-link text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-300"
+              href="https://linkedin.com/in/thenanjay"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a
+              class="social-link text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-300"
+              href="#"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[var(--accent-color)]">
+      <div class="container mx-auto py-6 px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row justify-between items-center">
+          <div class="text-[var(--text-secondary)] text-sm">
+            © 2024 Thenanjay Patel. All Rights Reserved.
+          </div>
+          <div class="flex space-x-6 mt-4 sm:mt-0">
+            <a
+              class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-sm"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-sm"
+              href="#projects"
+              >Projects</a
+            >
+            <a
+              class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-sm"
+              href="#contact"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
